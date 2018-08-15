@@ -8,3 +8,17 @@ class CoinListing(View):
     def get(self, request, *args, **kwargs):
 
         return render(request, self.template, {})
+
+
+class Followed(View):
+    template = 'coins/followed.html'
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template, {})
+
+
+class CoinDetail(View):
+    template = 'coins/token.html'
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template, {})

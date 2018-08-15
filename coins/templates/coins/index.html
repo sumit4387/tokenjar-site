@@ -1,1 +1,163 @@
-Test
+{% extends "coins/layout/base.html" %}
+{% block content %}
+{% load staticfiles %}
+<ul class="nav nav-tabs tab-color">
+    <li class="nav-item">
+      <a class="nav-link navlink-color active" href="#home">COIN LIST</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link navlink-color" href="#follow">FOLLOWED</a>
+    </li>
+</ul>
+
+<!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+        <table id="example" class="display table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th><img src="{% static 'img/black_star.png' %}" class="blackStar"></th>
+                    <th>NAME</th>
+                    <th>PRICE</th>
+                    <th>TRANSFER</th>
+                    <th>ACTIVITY</th>
+                    <th>TAG</th>
+                    <th>FOLLOWED</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="{% static 'img/white_star.png' %}" class="whiteStar"></td>
+                    <td>Tiger Nixon</td>
+                    <td><img src="{% static 'img/graygraph.png' %}" class="tableGraph"></td>
+                    <td><img src="{% static 'img/graygraph.png' %}" class="tableGraph"></td>
+                    <td><img src="{% static 'img/graygraph.png' %}" class="tableGraph"></td>
+                    <td>2011/04/25</td>
+                    <td>$320,800</td>
+                </tr>
+                <tr>
+                    <td><img src="{% static 'img/white_star.png' %}" class="whiteStar"></td>
+                    <td>Garrett Winters</td>
+                    <td><img src="{% static 'img/graygraph.png' %}" class="graygraph"></td>
+                    <td><img src="{% static 'img/graygraph.png' %}" class="graygraph"></td>
+                    <td><img src="{% static 'img/graygraph.png' %}" class="graygraph"></td>
+                    <td>2011/07/25</td>
+                    <td>$170,750</td>
+                </tr>
+                <tr>
+                    <td><img src="{% static 'img/white_star.png' %}" class="whiteStar"></td>
+                    <td>Ashton Cox</td>
+                    <td><img src="{% static 'img/graygraph.png' %}" class="graygraph"></td>
+                    <td><img src="{% static 'img/graygraph.png' %}" class="graygraph"></td>
+                    <td><img src="{% static 'img/graygraph.png' %}" class="graygraph"></td>
+                    <td>2009/01/12</td>
+                    <td>$86,000</td>
+                </tr>
+                <tr>
+                    <td><img src="{% static 'img/white_star.png' %}" class="whiteStar"></td>
+                    <td>Cedric Kelly</td>
+                    <td><img src="{% static 'img/graygraph.png' %}" class="graygraph"></td>
+                    <td><img src="{% static 'img/graygraph.png' %}" class="graygraph"></td>
+                    <td><img src="{% static 'img/graygraph.png' %}" class="graygraph"></td>
+                    <td>2012/03/29</td>
+                    <td>$433,060</td>
+                </tr>
+                <tr>
+                    <td><img src="{% static 'img/white_star.png' %}" class="whiteStar"></td>
+                    <td>Airi Satou</td>
+                    <td><img src="{% static 'img/tableGraph.png' %}" class="tableGraph"></td>
+                    <td><img src="{% static 'img/tableGraph.png' %}" class="tableGraph"></td>
+                    <td><img src="{% static 'img/tableGraph.png' %}" class="tableGraph"></td>
+                    <td>2008/11/28</td>
+                    <td>$162,700</td>
+                </tr>
+                <tr>
+                    <td><img src="{% static 'img/white_star.png' %}" class="whiteStar"></td>
+                    <td>Brielle Williamson</td>
+                    <td><img src="{% static 'img/tableGraph.png' %}" class="tableGraph"></td>
+                    <td><img src="{% static 'img/tableGraph.png' %}" class="tableGraph"></td>
+                    <td><img src="{% static 'img/tableGraph.png' %}" class="tableGraph"></td>
+                    <td>2012/12/02</td>
+                    <td>$372,000</td>
+                </tr>
+                <tr>
+                    <td><img src="{% static 'img/white_star.png' %}" class="whiteStar"></td>
+                    <td>Herrod Chandler</td>
+                    <td><img src="{% static 'img/graygraph.png' %}" class="graygraph"></td>
+                    <td><img src="{% static 'img/graygraph.png' %}" class="graygraph"></td>
+                    <td><img src="{% static 'img/graygraph.png' %}" class="graygraph"></td>
+                    <td>2012/08/06</td>
+                    <td>$137,500</td>
+                </tr>
+                <tr>
+                    <td><img src="{% static 'img/white_star.png' %}" class="whiteStar"></td>
+                    <td>Jena Gaines</td>
+                    <td><img src="{% static 'img/tableGraph.png' %}" class="tableGraph"></td>
+                    <td><img src="{% static 'img/tableGraph.png' %}" class="tableGraph"></td>
+                    <td><img src="{% static 'img/tableGraph.png' %}" class="tableGraph"></td>
+                    <td>2008/12/19</td>
+                    <td>$90,560</td>
+                </tr>
+                <tr>
+                    <td><img src="{% static 'img/white_star.png' %}" class="whiteStar"></td>
+                    <td>Quinn Flynn</td>
+                    <td><img src="{% static 'img/graygraph.png' %}" class="graygraph"></td>
+                    <td><img src="{% static 'img/graygraph.png' %}" class="graygraph"></td>
+                    <td><img src="{% static 'img/graygraph.png' %}" class="graygraph"></td>
+                    <td>2013/03/03</td>
+                    <td>$342,000</td>
+                </tr>
+                <tr>
+                    <td><img src="{% static 'img/white_star.png' %}" class="whiteStar"></td>
+                    <td>Charde Marshall</td>
+                    <td><img src="{% static 'img/tableGraph.png' %}" class="tableGraph"></td>
+                    <td><img src="{% static 'img/tableGraph.png' %}" class="tableGraph"></td>
+                    <td><img src="{% static 'img/tableGraph.png' %}" class="tableGraph"></td>
+                    <td>2008/10/16</td>
+                    <td>$470,600</td>
+                </tr>
+                <tr>
+                    <td><img src="{% static 'img/white_star.png' %}" class="whiteStar"></td>
+                    <td>Haley Kennedy</td>
+                    <td><img src="{% static 'img/tableGraph.png' %}" class="tableGraph"></td>
+                    <td><img src="{% static 'img/tableGraph.png' %}" class="tableGraph"></td>
+                    <td><img src="{% static 'img/tableGraph.png' %}" class="tableGraph"></td>
+                    <td>2012/12/18</td>
+                    <td>$313,500</td>
+                </tr>
+            </tbody>
+           <!--  <tfoot>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Age</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                </tr>
+            </tfoot> -->
+        </table>
+    </div>
+    <div id="follow" class="container tab-pane"><br>
+        <div class="card ">
+          <div class="card-body">
+            <h5 class="card-title"><img src="{% static 'img/follow/icon1.png' %}" class="icon"> ZRX  <a href="#" class="card-link date-right">2018.08.03</a></h5>
+
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><img src="{% static 'img/follow/icon2.png' %}" class="icon"> ETH <a href="#" class="card-link date-right">2018.08.03</a></h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><img src="{% static 'img/follow/icon3.png' %}" class="icon"> DAI <a href="#" class="card-link date-right">2018.08.03</a></h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+          </div>
+        </div>
+    </div>
+  </div>
+{% endblock %}
