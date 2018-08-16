@@ -11,13 +11,13 @@ class Coins(models.Model):
     highDay = models.IntegerField(null=True, default=0)
     priceChangeRateDay = models.IntegerField(null=True, default=0)
     type = models.IntegerField(null=True, default=0)
-    PriceChageDay = models.IntegerField(null=True, default=0)
+    priceChangeDay = models.IntegerField(null=True, default=0)
     lowDay = models.IntegerField(null=True, default=0)
     price = models.IntegerField(null=True, default=0)
     twitter = models.URLField(blank=True, null=True)
     pair = models.CharField(max_length=50, blank=True, null=True)
     address = models.TextField(null=True)
-    decimals = models.DecimalField
+    decimals = models.CharField(max_length=50, blank=True, null=True)
 
 
     def __str__(self):
