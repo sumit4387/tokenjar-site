@@ -23,7 +23,7 @@ class Command(BaseCommand):
                 base = data['base']
                 address = coins_detail[d['symbol']]['address']
                 decimals = coins_detail[d['symbol']]['decimals']
-
+                print(d)
                 if Coins.objects.filter(symbol=d['symbol']):
                     Coins.objects.filter(symbol=d['symbol']).update(
                         name=d['name'],
