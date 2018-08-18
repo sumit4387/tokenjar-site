@@ -41,10 +41,16 @@ table.dataTable.no-footer {
 	display: none;
 }
 .dataTables_paginate {
-	display: none;
+	/*display: none;*/
 }
 .tab-content{
 	margin-bottom: 30px;
+}
+img.tableGraph {
+    cursor: pointer;
+}
+img.graygraph{
+    cursor: pointer;
 }
 table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd {
     background-color: #FFF9EC !important
