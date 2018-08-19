@@ -31,13 +31,15 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'suit',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'coins'
+    'coins',
+
 ]
 
 MIDDLEWARE = [
@@ -133,3 +135,17 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+
+SUIT_CONFIG = {
+    'ADMIN_NAME': 'Tokenjar community',
+    'CONFIRM_UNSAVED_CHANGES': False,
+    'MENU_OPEN_FIRST_CHILD': True,
+    'LIST_PER_PAGE': 18,
+    'MENU': (
+        {'label': 'Token', 'models': (
+            {'model': 'coins.Coins'},
+        )},
+
+    )
+}
