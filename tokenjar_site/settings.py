@@ -25,7 +25,7 @@ SECRET_KEY = '4qx#0a(9mw#^-bz2#t6ksqk(-%cvkdmk=q21^21^o_-a3oo9s^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'tokenjar',
         'USER': 'postgres',
-        'PASSWORD': 'postgres',
+        'PASSWORD': 'TokenAdminJar2!3',
         'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
         'PORT': '5432',
     }
@@ -121,21 +121,18 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.1/howto/static-files/
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-
 
 SUIT_CONFIG = {
     'ADMIN_NAME': 'Tokenjar community',
@@ -149,3 +146,4 @@ SUIT_CONFIG = {
 
     )
 }
+
