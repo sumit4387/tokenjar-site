@@ -21,6 +21,6 @@ from coins import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.CoinListing.as_view(), name='index'),
-    url(r'^detail/', views.CoinDetail.as_view(), name='detail'),
+    url(r'^detail/(?P<symbol>[A-Za-z]+)', views.CoinDetail.as_view(), name='detail'),
 
 ]

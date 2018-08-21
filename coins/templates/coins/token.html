@@ -6,9 +6,13 @@
     <div class="col-md-4 col-sm-12 p-0">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title"><img src="{% static '' %}img/twitter.png"><img src="{% static '' %}img/send.png"><img src="{% static '' %}img/w.png"></h5>
-            <h6 class="card-subtitle mb-2 text-muted token-subtitle">Symbol: GNO</h6>
-            <h6 class="card-subtitle mb-2 text-muted token-subtitle">OxB07ec2c2</h6>
+            <h5 class="card-title">
+                <a href="{% if token_detail.twitter == '0' %}javascript:void(0){% else %}{{ token_detail.twitter }}{% endif %}"><img src="{% static '' %}img/twitter.png"></a>
+                <a href="{% if token_detail.website == '0' %}javascript:void(0){% else %}{{ token_detail.website }}{% endif %}"><img src="{% static '' %}img/send.png"></a>
+                <a href=""><img src="{% static '' %}img/w.png"></a>
+            </h5>
+            <h6 class="card-subtitle mb-2 text-muted token-subtitle">Symbol: {{ token_detail.symbol }}</h6>
+            <h6 class="card-subtitle mb-2 text-muted token-subtitle">{{ token_detail.address }}</h6>
             <h6 class="card-subtitle mb-2 text-muted token-subtitle">Followers: 1234</h6>
 
             <button type="button" class="btn btn-outline-success card-btn">Protocol</button>
@@ -29,11 +33,11 @@
                   </tr>
                   <tr>
                     <td>Price</td>
-                    <td>234.11</td>
+                    <td>{{ token_detail.price }}</td>
                    </tr>
                   <tr>
                     <td>Volume</td>
-                    <td>0.987656</td>
+                    <td>{{ token_detail.volumeDay }}</td>
                   </tr>
                    <tr>
                     <td>ICO Price</td>

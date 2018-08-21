@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.views import View
 from coins.models import Coins
+from django.http import Http404
+
 
 # Create your views here.
 class CoinListing(View):
@@ -22,5 +24,10 @@ class Followed(View):
 class CoinDetail(View):
     template = 'coins/token.html'
 
-    def get(self, request, *args, **kwargs):
-        return render(request, self.template, {})
+    def get(self, request, symbol, *args, **kwargs):
+        try:
+            token_detail = Coins.objects.get(symbol=symbol)
+        except:
+            raise Http404
+
+        return render(request, self.template, {'token_detail' :token_detail})
