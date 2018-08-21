@@ -30,7 +30,7 @@
                 {% for coin in coins %}
                     <tr>
                         <td><img src="{% static 'img/white_star.png' %}" class="whiteStar"></td>
-                        <td>{{ coin.name }}</td>
+                        <td><a href="/detail/{{ coin.symbol }}">{{ coin.name }}</a></td>
                         <td>{{ coin.symbol }}</td>
 
                         <td><img src="{% static 'img/graygraph.png' %}" class="tableGraph" data-toggle="modal" data-target="#myModal"></td>
