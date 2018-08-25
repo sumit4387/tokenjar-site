@@ -1,0 +1,223 @@
+body{
+	background: #D7D6D2;
+	font-size: 14px;
+}
+.main-container{
+	width:75%;
+}
+.dataTables_length{
+	display: none;
+}
+.dataTables_wrapper .dataTables_filter{
+	margin-top: -65px;
+	margin-right: 6px;
+}
+.header-color{
+	background: #FFF9EC;
+}
+.blackStar{
+	height: 20px;
+}
+.whiteStar{
+	height: 20px;
+}
+#home{
+	background: #FFF9EC;
+    padding: 0;
+}
+.navlink-color.active{
+	background-color: #FFF9EC !important;
+	font-size: 23px;
+	color: #000;
+}
+.navlink-color{
+	font-size: 20px;
+	color: #000;
+}
+table.dataTable.no-footer {
+    border-bottom: none;
+}
+.dataTables_info{
+	display: none;
+}
+.dataTables_paginate {
+	display: none;
+}
+.tab-content{
+	margin-bottom: 30px;
+}
+table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd {
+    background-color: #FFF9EC !important
+}
+table.dataTable.display tbody tr.odd>.sorting_2, table.dataTable.order-column.stripe tbody tr.odd>.sorting_2 {
+     background-color: #FFF9EC !important
+}
+table.dataTable.display tbody tr.even>.sorting_2, table.dataTable.order-column.stripe tbody tr.even>.sorting_2 {
+    background-color: #EBE8E0 !important;
+}
+table.dataTable tbody tr {
+    background-color: #EBE8E0 !important;
+}
+.tab-color{
+	background-color: #EBE8E0 !important;
+}
+.header-color ul li.logo-li a{
+	padding:0;
+}
+.header-color ul li.logo-li a img{
+	    width: 155px;
+}
+.header-color ul li.nav-item {
+    padding: 0 16px;
+    border-right: 1px solid #ccc;
+}
+
+
+/*follow page start*/
+#follow{
+	background: #FFF9EC;
+}
+#follow .card{
+	background: #FFF9EC;
+	border: none;
+    border-bottom: 1px solid #ccc;
+}
+.icon{
+	height: 40px;
+}
+.date-right{
+	float: right;
+    font-size: 14px;
+    color: #000;
+}
+
+/*token css start*/
+.bannerContainer{
+	height: 200px;
+    background: #282828;
+    position: relative;
+}
+.bannerRow{
+	position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.followbtn
+{
+	background: #FFF9EC;
+	font-size: 17px;
+    font-weight: bold;
+    height: 40px;
+    margin: 0 0px 15px 0px;
+}
+.followbtn img{
+	height: 25px;
+}
+.tradingbtn{
+	background: #FFF9EC;
+	font-size: 17px;
+    font-weight: bold;
+    height: 40px;
+    margin: 0 15px 15px 15px;
+}
+.tradingbtn img{
+	height: 25px;
+}
+.banner-imgwrap
+{
+	background: #00ACE1;
+    height: 110px;
+    width: 110px;
+    border-radius: 100%;
+    border: 4px solid #fff;
+    position: absolute;
+    bottom: -26px;
+    left:4%;
+}
+.bantext
+{
+	text-align: left;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 22%;
+}
+
+/* left panes css start*/
+.market-table td:nth-of-type(even){
+	text-align: right;
+}
+.market-table td:nth-of-type(odd){
+	text-align: left;
+}
+#about, #hot, #pinned, #current{
+	padding:0;
+}
+#about .card{
+	border:0;
+	background: #FFF9EC !important;
+
+}
+.card{
+	border:0;
+	background: #FFF9EC !important;
+
+}
+#about, #hot, #pinned , #current{
+background: #FFF9EC !important;
+
+}
+.tokentab-color{
+	background-color: #FFF9EC !important;
+}
+#token .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+	border:0;
+	border-bottom: 2px solid #0080007a;
+}
+.card-btn{
+	padding: 0 11px;
+    font-size: 14px;
+}
+.token-subtitle{
+	margin:5px 0;
+	color: #000 !important;
+}
+.market-table td{
+	border:0;
+	font-weight: 500;
+	padding: 7px 0;
+}
+
+/*About tab css start*/
+#about{
+	padding: 20px;
+}
+.left-img
+{
+	width: 60px;
+    float: left;
+    height: 60px;
+    background: #000;
+    border-radius: 100%;
+}
+.about-block{
+	padding: 10px;
+	border:1px solid #000 !important;
+	display: inline-block;
+}
+.about-btn{
+	padding: 0 23px;
+    font-size: 13px;
+}
+.rech1{
+	font-size: 20px;
+}
+.view-all{
+	color: #369F7A;
+    font-size: 14px;
+}
+.red-pin
+{
+	padding: 5px;
+    height: 35px;
+}
