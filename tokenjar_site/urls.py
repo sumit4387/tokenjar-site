@@ -14,13 +14,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.conf.urls import url
+from django.conf.urls import url, include
 from coins import views
+from organizations.backends import invitation_backend
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.CoinListing.as_view(), name='index'),
     url(r'^detail/(?P<symbol>[A-Za-z]+)', views.CoinDetail.as_view(), name='detail'),
-
+    url(r'^accounts/', include('organizations.urls')),
+    url(r'^invitations/', include(invitation_backend().get_urls())),
 ]

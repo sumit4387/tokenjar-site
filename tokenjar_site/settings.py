@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'coins',
-
+    'organizations',
 ]
 
 MIDDLEWARE = [
@@ -146,6 +146,17 @@ SUIT_CONFIG = {
         {'label': 'Token', 'models': (
             {'model': 'coins.Coins'},
         )},
+        {'label': 'Telegram teams', 'models': (
+            {'model': 'organizations.organization'},
+        )},
+          {'label': 'Telegram Users', 'models': (
+            {'model': 'organizations.organizationuser'},
+        )},
+          {'label': 'Telegram Owner', 'models': (
+            {'model': 'organizations.organizationowner'},
+        )}
 
     )
 }
+# ORGS_SLUGFIELD = 'autoslug.fields.AutoSlugField'
+# ORGS_SLUGFIELD = 'django_extensions.db.fields.AutoSlugField'
