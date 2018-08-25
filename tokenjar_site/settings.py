@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'martor',
     'suit',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -39,7 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'coins',
-
+    # 'django_markup',
+    'django_object_actions',
+    'organizations',
+    'telegramtoken'
 ]
 
 MIDDLEWARE = [
@@ -143,7 +147,25 @@ SUIT_CONFIG = {
         {'label': 'Token', 'models': (
             {'model': 'coins.Coins'},
         )},
+        {'label': 'Telegram Token', 'models': (
+            {'model': 'telegramtoken.telegramcontent'},
+            {'model': 'telegramtoken.telegramtoken'},
+        )},
+        {'label': 'Transactions', 'models': (
+            {'model': 'telegramtoken.telegramtransaction'},
+        )},
+        {'label': 'Configuration', 'models': (
+            {'model': 'telegramtoken.activationmode'},
+        )},
+        {'label': 'Telegram teams', 'models': (
+            {'model': 'organizations.organization'},
+        )},
+          {'label': 'Telegram Users', 'models': (
+            {'model': 'organizations.organizationuser'},
+        )},
+          {'label': 'Telegram Owner', 'models': (
+            {'model': 'organizations.organizationowner'},
+        )}
 
     )
 }
-

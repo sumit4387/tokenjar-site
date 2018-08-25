@@ -1,0 +1,11 @@
+{% extends "admin/login.html" %}
+{% load i18n admin_static suit_tags %}
+{% load url from suit_compat %}
+
+{% block container %}
+<div id="wrap">
+  <!-- Container -->
+   {% block content %}{{ block.super }}{% endblock %}
+  <div id="push"></div>
+</div>
+{% endblock %}
